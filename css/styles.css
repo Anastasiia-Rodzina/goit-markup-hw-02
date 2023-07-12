@@ -8,7 +8,7 @@ body {
   text-decoration: none;
 }
 .list {
-  list-style-type: none;
+  list-style: none;
 }
 :root {
   --iris: #4d5ae5;
@@ -21,16 +21,18 @@ body {
 }
 .logo {
   color: var(--iris);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .logo-studio {
   color: var(--navyblue);
 }
 .menu-nav {
+  color: var(--navyblue);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -40,6 +42,9 @@ body {
 .menu-nav .link:focus {
   color: var(--ocean);
   text-decoration: underline;
+}
+.list-contacts {
+  font-style: normal;
 }
 .contacts {
   color: var(--slate);
@@ -65,8 +70,8 @@ body {
 }
 .hero-btn {
   background: var(--iris);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white);
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -82,7 +87,7 @@ body {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -90,7 +95,7 @@ body {
   color: var(--navyblue);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.11;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .text {
@@ -104,31 +109,22 @@ body {
   background: var(--cloud);
 }
 .list-team-item {
-  border-radius: 0px 0px 4px 4px;
   background: var(--white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .filter-btn {
   color: var(--iris);
-  text-align: center;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
-  border: 1px solid var(--cornflower);
-  background: var(--cloud);
+  background-color: var(--cloud);
   cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--white);
-  border-radius: 4px;
-  background: var(--ocean);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--ocean);
 }
 .page-end {
   background: var(--navyblue);
